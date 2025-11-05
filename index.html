@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+</head>
+<body>
+    <div class="container">
+        <div class="greeting">
+            <h1 id="greetingText">Good Morning! ☀️</h1>
+            <p id="greetingSubtext">How's the weather looking today?</p>
+        </div>
+
+        <div class="search-card">
+            <label class="search-label">Where would you like to check?</label>
+            <div class="search-wrapper">
+                <input type="text" id="cityInput" placeholder="Type a city name..." />
+                <button id="searchBtn">Check</button>
+            </div>
+        </div>
+
+        <div class="error-card" id="errorCard">
+            <div class="error-icon">😕</div>
+            <div class="error-text">
+                <div class="error-title">Oops!</div>
+                <div class="error-message" id="errorMessage"></div>
+            </div>
+        </div>
+
+        <div class="loading-card" id="loadingCard">
+            <div class="loading-spinner"></div>
+            <div class="loading-text">Getting weather info...</div>
+        </div>
+
+        <div class="weather-card" id="weatherCard">
+            <div class="location-info">
+                <div class="location-icon">📍</div>
+                <div class="location-text">
+                    <h2 id="cityName"></h2>
+                    <p id="localTime"></p>
+                </div>
+            </div>
+
+            <div class="main-weather">
+                <div class="weather-visual">
+                    <div class="big-icon" id="weatherIcon"></div>
+                    <div class="condition-text" id="condition"></div>
+                </div>
+                <div class="temp-info">
+                    <div class="main-temp" id="temperature"></div>
+                    <div class="feels-like-text">Feels like <span id="feelsLike"></span></div>
+                </div>
+            </div>
+
+            <div class="weather-details">
+                <div class="detail-box">
+                    <div class="detail-icon">💧</div>
+                    <div class="detail-name">Humidity</div>
+                    <div class="detail-info" id="humidity"></div>
+                </div>
+                <div class="detail-box">
+                    <div class="detail-icon">💨</div>
+                    <div class="detail-name">Wind Speed</div>
+                    <div class="detail-info" id="windSpeed"></div>
+                </div>
+                <div class="detail-box">
+                    <div class="detail-icon">🌡️</div>
+                    <div class="detail-name">Pressure</div>
+                    <div class="detail-info" id="pressure"></div>
+                </div>
+                <div class="detail-box">
+                    <div class="detail-icon">👁️</div>
+                    <div class="detail-name">Visibility</div>
+                    <div class="detail-info" id="visibility"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
