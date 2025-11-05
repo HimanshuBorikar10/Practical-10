@@ -1,12 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Weather App</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
+    
     <div class="container">
         <div class="greeting">
             <h1 id="greetingText">Good Morning! ☀️</h1>
@@ -41,6 +44,10 @@
                     <h2 id="cityName"></h2>
                     <p id="localTime"></p>
                 </div>
+            </div>
+            <div class="forecast-card" id="forecastCard">
+                <h3 style="margin-bottom: 10px;">5-Day Forecast</h3>
+                <div id="forecastContainer" class="forecast-grid"></div>
             </div>
 
             <div class="main-weather">
@@ -78,5 +85,8 @@
             </div>
         </div>
     </div>
+    <script src="script.js"></script>
+
 </body>
+
 </html>
