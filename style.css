@@ -350,3 +350,36 @@ body.night {
         font-size: 4em;
     }
 }
+.forecast-card {
+    display: none;
+    background: white;
+    padding: 25px;
+    border-radius: 20px;
+    margin-top: 25px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+.forecast-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 15px;
+}
+
+.forecast-day {
+    text-align: center;
+    background: #f8f9fa;
+    padding: 15px;
+    border-radius: 12px;
+}
+
+.forecast-day:hover {
+    background: #e8f4f8;
+    transform: translateY(-3px);
+    transition: 0.2s;
+}
+
+.forecast-temp {
+    font-size: 22px;
+    font-weight: 600;
+    color: #2c3e50;
+}
