@@ -112,5 +112,4 @@ function hideAll() {
 }
 
 setGreeting();
-cityInput.value = "London";
-getWeather();
+
